@@ -1,0 +1,485 @@
+/*************** Start Global Style ******************/
+.section-padding{
+    padding-block:70px;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Montserrat", serif;
+    font-weight: 700;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+:root{
+    --main-color:#343434;
+    --main-background-color:#F7F7F7;
+}
+
+
+/* @font-face {
+    font-family: "Montserrat-700";
+    src: url(/static/Montserrat-Bold.ttf);
+}
+@font-face {
+    font-family: "Montserrat-400";
+    src: url(/static/Montserrat-Regular.ttf);
+} */
+
+body{
+    font-family: "Montserrat", serif;
+}
+
+.main-title{
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+.main-title h3{
+    position: relative;
+    /* z-index: 9999999; */
+}
+.main-title h3::after{
+    position: absolute;
+    content: "";
+    background-image: url(../img/dots.png);   
+    width: 160px;
+    height: 30px;
+    top: 50%;
+    left: 0;
+    z-index: -2;
+
+}
+/*************** End Global Style ******************/
+
+nav .nav-link-2{
+    position: relative;
+    padding-right: 20px !important;
+    padding-left: 0 !important;
+    color: var(--main-color);
+}
+nav .my-nav .nav-link-2::after{
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    background-color: #343434;
+    width: 0;
+    height: 3px;
+    transition: all .5s ease-in-out;
+}
+
+/* nav .my-nav .nav-link-2:hover::after,
+nav .my-nav .nav-link li:hover>.nav-link::after, */
+nav .my-nav .nav-link-2.active::after{
+    width: 75%;
+}
+.navbar .navbar-brand {
+    font-family: "Montserrat", serif;
+    font-weight: 700;
+}
+
+  /*************** Start Header Style ******************/
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.570), rgba(0, 0, 0, 0.570)), url(../img/bg.jpg);
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* justify-content: center; */
+}
+header .content{
+    text-align: center;
+    color: #F7F7F7;
+    height: 100%;
+}
+header .content .size{
+    font-weight:300;
+    font-size: 35px;
+    font-family: "Montserrat", serif;
+}
+header .content span{
+    font-weight: 400;
+    font-size: 40px ;
+    width: 100%;
+    letter-spacing: 2px;
+}
+header .social {
+    color: #fff;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width:98%;
+    /* height: 30px; */
+    border-radius: 50px;
+
+}
+header .social li a {
+    margin: 10px;
+    color: #fff;
+}
+header .container .arow{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #343434;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 10px;
+    /* font-size: 10; */
+    transition: all .5s ease-in-out;
+}
+header .container .arow:hover{
+    background-color: #748182;
+    
+}
+/*************** End Header Style ******************/
+/*************** Start About Style ******************/
+.about .imge{
+    position: relative;
+}
+.about .imge::after{
+    position: absolute;
+    content: "";
+    width: 330px;
+    height: 300px;
+    background-image: url(../img/dots.png);
+    top: 50%;
+    left: 15%;
+    z-index: -1;
+}
+.about .about-content p{
+    line-height: 1.86rem;
+}
+.about .about-content .progres{
+    background-color: gainsboro;
+    width: 100%;
+    border-radius:10px ;
+    height: 30px;
+}
+.about .about-content .progres .pro{
+    width: 95%;
+    border-radius: 10px;
+    background-color: #343434;
+    padding: 10px;
+    height: 100%;
+}
+.about .about-content .progres-1{
+    background-color: gainsboro;
+    width: 100%;
+    border-radius:10px ;
+    height: 30px;
+}
+.about .about-content .progres-1 .pro{
+    width: 80%;
+    border-radius: 10px;
+    background-color: var(--main-color);
+    padding: 10px;
+    height: 100%;
+}
+.about .about-content .progres-2{
+    background-color: gainsboro;
+    width: 100%;
+    border-radius:10px ;
+    height: 30px;
+}
+.about .about-content .progres-2 .pro{
+    width: 90%;
+    border-radius: 10px;
+    background-color: var(--main-color);
+    padding: 10px;
+    height: 100%;
+}
+.about .about-content .active{
+    margin:20px 10px;
+    background-color:var(--main-color);
+    color: white;
+    padding: 15px 29px;
+    border-radius: 10px;
+    transition: background-color .5s ease-in-out;
+}
+.about .about-content .active:hover{
+    background-color:transparent;
+    color:var(--main-color);
+    border: 1px solid var(--main-color);
+
+}
+.about .about-content .no-active{
+    padding: 15px 29px;
+    border: 1px solid var(--main-color);
+    border-radius: 10px;
+    color:#343434;
+}
+.about .about-content .no-active:hover{
+    background-color:var(--main-color);
+    color: white;
+    transition: background-color .5s ease-in-out;
+}
+/*************** End About Style ******************/
+/*************** Start Services Style ******************/
+.services{
+    background-color: var(--main-background-color);
+}
+/* .services .container .services-card {
+} */
+.services .container .services-card:hover i{
+    background-color: var(--main-color);
+    color: #fff;
+} 
+.services .container .services-card i{
+    padding: 20px;
+    background-color :#ebebeb;
+    border-radius: 50%;
+    font-size: 30px;
+    color: var(--main-color);
+    transition: all .5s ease-in-out;
+}
+
+/*************** End Services Style ******************/
+/*************** Start Portfolio Style ******************/
+.portfolio{
+
+}
+.portfolio .container .imge{
+    position: relative;
+    overflow: hidden;
+
+}
+.portfolio .container .imge .layer-portfolio  {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 97%;
+  height: 97%;
+  background-color: rgba(255, 255, 255, 0.979);
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+.portfolio .container .imge .layer-portfolio .web{
+    position: absolute;
+    /* background-color: yellow; */
+    top: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+}
+.portfolio .container .imge .layer-portfolio .web h3{
+    margin-left: 15px;
+}
+.portfolio .container .imge .layer-portfolio .web .search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px;
+    transition: all .5s ease-in-out;
+}
+.portfolio .container .imge .layer-portfolio .web .search i{
+    margin-left: 15px;
+    padding: 5px;
+    background-color: #343434;
+    border-radius: 50%;
+    transition: all .5s ease-in-out;
+    color: #fff;
+}
+.portfolio .container .imge .layer-portfolio .web .search i:hover{
+    background-color: white;
+    color: #343434;
+}
+.portfolio .container .imge .layer-portfolio:hover{
+    opacity: 1;
+}
+.portfolio .container .imge .layer-portfolio:hover .web {
+    top: 50%;
+}
+.portfolio .nav .nav-link{
+    color: #343434;
+    padding-inline: 20px;
+    font-weight: 600;
+    font-size: 18px;
+    position: relative;
+    font-family: "Montserrat", serif;
+    font-weight: 700;
+}
+.portfolio .nav .nav-link::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: #343434;
+    top: 38px;
+    left: 10px;
+    transition: all .5s ease-in-out;
+}
+.portfolio .nav .nav-link.active::after{
+    width: 75%;
+}
+.portfolio .nav .nav-link.active{
+    background-color: transparent;
+}
+
+/*************** End Portfolio Style ******************/
+/*************** Start testimonial Style ******************/
+.testimonial{
+    text-align: center;
+    background-color: #F7F7F7;
+}
+.testimonial .carousel img {
+    width: 100px;
+    border-radius:50% ;
+
+}
+.testimonial .carousel-indicators [data-bs-target="#carouselExampleCaptions"]{
+    width: 10px;
+    background-color: #5b5b5b37;
+    height: 10px;
+    border-radius: 50%;
+}
+.testimonial .carousel-indicators [data-bs-target="#carouselExampleCaptions"].active{
+    background-color:rgba(39, 42, 39, 0.525);
+}
+/*************** End testimonial Style ******************/
+/*************** Start Stat Style ******************/
+.stat .container .item i{
+    font-size: 27px;
+}
+/*************** End Stat Style ******************/
+/*************** Start Our-Team Style ******************/
+.our-team {
+    background-color: var(--main-background-color);
+}
+.our-team .imge{
+    position: relative;
+    transition: all .5s ease-in-out;
+    overflow: hidden;
+}
+.our-team .imge img{
+    transition: all .5s ease-in-out;
+}
+.our-team .imge:hover img{
+    transform: scale(1.1);
+}
+.our-team .imge .layer-our{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 97%;
+    height: 97%;
+    background-color: rgba(254, 253, 253, 0.945);
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+.our-team .imge .layer-our ul{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-55%);
+}
+.our-team .imge .layer-our ul li{
+    margin-right: 15px;
+    font-size: 25px;
+    
+}
+.our-team  .card:hover .layer-our{
+    opacity: 1;
+    transform: rotateY(360deg);
+}
+.our-team .imge .layer-our ul li i{
+    
+    border-radius: 50%;
+    color: #fff;
+    background-color: #343434;
+    padding: 8px;
+    transition: all .5s ease-in-out;
+}
+.our-team .imge .layer-our ul li i:hover{
+ color: #343434;
+ background-color: #fff;
+}
+.our-team .card-body{
+    background-color: #545353;
+    color: #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.our-team  .card-body h4{
+    font-weight: normal !important;
+}
+.our-team  .card-body p{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/*************** End Our-Team Style ******************/
+/*************** Start contact-us Style ******************/
+.contact-us .item i{
+    padding: 25px;
+    background-color: var(--main-background-color);
+    border-radius: 50%;
+    transition: all .5s ease-in-out;
+}
+.contact-us .item i:hover{
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+.contact-us form .input{
+    width: 100%;
+    background-color: var(--main-background-color);
+    outline: none;
+    border: none;
+    height: 40px;
+    border-radius: 10px;
+}
+.contact-us form .input::placeholder{
+    padding-left: 5px;
+}
+.contact-us form textarea{
+    background-color: var(--main-background-color);
+    border: none;
+    outline: none;
+    width: 100%;
+    border-radius: 10px;
+}
+.contact-us form textarea::placeholder{
+    padding-left: 5px;
+}
+.contact-us form textarea:focus{
+    outline: none !important;
+}
+.contact-us form button{
+    border: none;
+    margin-top: 15px;
+    margin-left: 5px;
+    padding: 8px 35px;
+    border-radius:5px ;
+    background-color: var(--main-color);
+    color: #fff;
+    transition: all .5s ease-in-out;
+}
+.contact-us form button:hover{
+    background-color: #fff;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+}
+.footer {
+    height: 80px;
+    background-color: var(--main-color);
+    color: #748182;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+/*************** End contact-us Style ******************/
+
+
+
+
+
+
